@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+
+<head> 
+<meta charset="utf-8"/>
+<title> Binaire</title>
+<link rel="stylesheet" href="css/style.css"/> 
+<link rel="icon" href="img/logo_binary.png">
+<script src="binaire.js" defer></script>
+
+
+
+</head>
+
+<body>
+<!-- <marquee scrollamount="1" direction="down" style="height:100%"> !-->
+<nav>
+
+
+
+    <a  href="index.html" class='navButton'  > ACCUEIL</a>
+    <a  href="horner.html" class='navButton' > HORNER</a>
+    <a  class='navButtonDeja' > CONVERTISSEUR BINAIRE </a>
+
+
+</nav>
+
+
+
+<h1> CONVERTISSEUR DE BINAIRE A DECIMAL</h1> 
+
+    
+<div id="convertisseur">
+
+    <div class="divBinary">
+        <h2> Le binaire</h2>
+        <p>
+            Le système binaire est un système d'écriture informatique en base 2.
+             Il n'utilise que deux caractères : le 0 et le 1. Dans le vocabulaire de la numérotation binaire,
+              on appelle « bit » les chiffres, qui ne peuvent prendre que ces deux valeurs. <br>
+              Le système binaire est utile pour représenter le fonctionnement de l'électronique numérique utilisée dans les ordinateurs. Il est donc utilisé par les langages de programmation de bas niveau.
+             
+        </p>
+
+
+    </div>
+    <div class="divBinary">
+    <h2> Convertisseur</h2>
+
+    <input type="text" placeholder="Nombre binaire" id="input" name="InputBinaire" required minlength="2" size="20" oninput="verif_nbr()">
+    <p class='egal'>=</p>
+    <input id="inputDisplay" placeholder="Nombre décimal" oninput="DecimalToBinary()" type="number">                                   </input>
+    </div>
+
+    <div class="divBinary">
+        <h2> L'ASCII</h2>
+        <p>
+            Le code ASCII (American Standard Code for Information Interchange) utilise un code binaire à 7 bits pour représenter du texte et d’autres caractères dans les ordinateurs
+            , les équipements de communication et autres périphériques. Un numéro entre 0 et 127 est attribué à chaque lettre ou symbole.
+             <br>Par exemple, "a" en minuscule est représenté par 1100001 sous forme de chaîne de bits ("97" en décimal).
+        </p>
+    </div>
+
+    <div class="divBinary">
+        <h2> Application</h2>
+    <p>
+
+        En informatique, la représentation binaire permet de clairement manipuler des bits : chaque chiffre binaire correspond à un bit. Cependant,
+         la représentation binaire nécessitant l'usage de beaucoup de chiffres (même pour des nombres assez petits), 
+         elle entraîne d'importants problèmes de lisibilité et donc de risques d'erreur de transcription pour les programmeurs.
+         <br> On préfère donc d'autres représentations : la notation hexadécimale, qui permet de manipuler l'information par paquets de 4 bits,
+          est adaptée à la quasi-totalité des microprocesseurs actuels travaillant avec des mots de 8, 16, 32 ou 64 bits ; plus rare, la notation octale,
+           populaire du temps des premiers mini-ordinateurs DEC à 12 ou 36 bits, qui permet de représenter l'information par paquets de 3 bits.
+          Source : <a href='https://fr.wikipedia.org/wiki/Syst%C3%A8me_binaire#Informatique' class='link'>wikipédia</a>
+        </p>
+
+    </div>
+
+
+<!-- </marquee> !-->
+</body>
+
+<!-- COMENTAITZEHR  <script defer> 
+
+
+async
+alert("Bienvenue dans le monde de JavaScript")
+
+
+
+</script> !-->
+
+</html>

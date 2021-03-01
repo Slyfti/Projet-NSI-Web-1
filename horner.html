@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+<head> 
+<meta charset="utf-8"/>
+<title> Horner</title>
+<link rel="stylesheet" href="css/style.css"/> 
+<link rel="icon" href="img/logo_horner.png">
+<script src="horner.js" defer></script>
+
+</head>
+
+
+<body>
+    <!-- <marquee scrollamount="1" direction="down" style="height:100%"> !-->
+    <nav>
+    
+    
+    
+        <a  href="index.html"class='navButton'  > ACCUEIL</a>
+        <a  class='navButtonDeja'> HORNER</a>
+        <a  href="binaire.html" class='navButton' > CONVERTISSEUR BINAIRE </a>
+    
+    
+    </nav>
+    
+    
+    
+    <h1> LA METHODE D'HORNER</h1> 
+    
+        
+    <div id="convertisseur">
+
+        <div class="divHornerExplication" >
+            <h2>Présentation de la méthode d'Horner</h2>
+
+                <p>
+En mathématiques et algorithmique, la méthode de Ruffini-Horner, connue aussi sous les noms de méthode de Horner, 
+algorithme de Ruffini-Horner ou règle de Ruffini,  se décline sur plusieurs niveaux. Elle permet de calculer la valeur d'un polynôme en x0.
+Elle présente un algorithme simple effectuant la division euclidienne d'un polynôme par X - x0.
+Mais elle offre aussi une méthode de changement de variable X= x0 + Y dans un polynôme.
+C'est sous cette forme qu'elle est utilisée pour déterminer une valeur approchée d'une racine d'un polynôme.
+                
+
+                </p>
+            <img src="img/horner.jpg" alt="horner" width="150px">
+            <img src="img/methode.svg"></img>
+        
+        </div>
+    
+        <div class="divHorner"  >
+            <span onclick="input()" id="hornerButton"> Calculer un polynôme en un point</span>
+            <p id="hornerOutput">
+            
+            </p>
+    
+    
+        </div>
+
+        
+    
+    <!-- </marquee> !-->
+    </body>
+    
+    <!-- COMENTAITZEHR  <script defer> 
+    
+    
+    async
+    alert("Bienvenue dans le monde de JavaScript")
+    
+    
+    
+    </script> !-->
+    
+    </html>
